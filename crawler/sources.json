@@ -1,0 +1,1195 @@
+{
+  "_comment": "เพิ่มแหล่งข้อมูลในอาร์เรย์ sources. file_url_regex = รูปแบบลิงก์ไฟล์ (เว็บนี้ใช้ /web/content/<เลข> ไม่มีนามสกุล) · follow_selector = ลิงก์หน้าย่อยที่จะตามเข้าไปหาไฟล์",
+  "settings": {
+    "user_agent": "RTAF-Personal-Library/0.1 (personal archive; contact: replace-with-your-email)",
+    "delay_seconds": 2,
+    "timeout_seconds": 30,
+    "max_pdf_mb": 80,
+    "max_text_chars": 300000,
+    "respect_robots_txt": true
+  },
+  "sources": [
+    {
+      "id": "rtaf-published-68",
+      "enabled": true,
+      "dept": "กองทัพอากาศ",
+      "name": "เอกสารเผยแพร่ (welcome-page.rtaf.mi.th)",
+      "start_urls": [
+        "https://welcome-page.rtaf.mi.th/e-ksaarephyaephr68"
+      ],
+      "allow_domains": [
+        "welcome-page.rtaf.mi.th"
+      ],
+      "file_url_regex": "/web/content/\\d+",
+      "file_link_selector": "main a[href], #wrap a[href], .card a[href]",
+      "follow_selector": ".card a[href]",
+      "max_pages": 30,
+      "default_category": "เอกสารเผยแพร่",
+      "default_tags": []
+    },
+    {
+      "id": "rtaf-person-orders",
+      "enabled": true,
+      "dept": "กพ.ทอ.",
+      "name": "กรมกำลังพลทหารอากาศ — ค้นหาคำสั่งและแบบธรรมเนียม",
+      "start_urls": [
+        "https://person.rtaf.mi.th/thds-b"
+      ],
+      "allow_domains": [
+        "person.rtaf.mi.th"
+      ],
+      "file_url_regex": "/web/content/\\d+",
+      "file_link_selector": "a[href]",
+      "group_is_category": true,
+      "default_category": "คำสั่ง/แบบธรรมเนียม",
+      "default_tags": []
+    },
+    {
+      "id": "rtaf-intell-published",
+      "enabled": true,
+      "dept": "ขว.ทอ.",
+      "name": "กรมข่าวทหารอากาศ — เอกสารเผยแพร่",
+      "start_urls": [
+        "https://intell.rtaf.mi.th/published-documents"
+      ],
+      "allow_domains": [
+        "intell.rtaf.mi.th"
+      ],
+      "file_url_regex": "/web/content/\\d+",
+      "file_link_selector": "#nav_tabs_content_1711952138996_129 a[href], #nav_tabs_content_1711952138996_130 a[href]",
+      "_scope": "เฉพาะแท็บ 'เอกสารราชการ' (_129) และ 'ระเบียบรักษาความปลอดภัย ทอ.' (_130) ถ้าเว็บเปลี่ยน id ของแท็บ ต้องแก้ตรงนี้",
+      "group_is_category": true,
+      "default_category": "เอกสารเผยแพร่",
+      "default_tags": []
+    },
+    {
+      "id": "rtaf-logist-regs",
+      "enabled": true,
+      "dept": "กบ.ทอ.",
+      "name": "กรมส่งกำลังบำรุงทหารอากาศ — ระเบียบและหนังสือเวียนเกี่ยวกับงานพัสดุ",
+      "start_urls": [
+        "https://logist.rtaf.mi.th/raebiiybaelahnangsuue-ewiiynekiiywkabngaanphasdu"
+      ],
+      "allow_domains": [
+        "logist.rtaf.mi.th"
+      ],
+      "file_url_regex": "/web/content/\\d+",
+      "file_link_selector": "a[href]",
+      "default_category": "หนังสือเวียนงานพัสดุ",
+      "default_tags": []
+    },
+    {
+      "id": "rtaf-dca-regs",
+      "enabled": true,
+      "dept": "กร.ทอ.",
+      "name": "กรมกิจการพลเรือนทหารอากาศ — คำสั่ง ระเบียบ และแผนฯ (ไฟล์อยู่บน Google Drive: เก็บเป็นรายการลิงก์)",
+      "start_urls": [
+        "https://dca.rtaf.mi.th/khamsang-raebiiyb-aelaaephn"
+      ],
+      "allow_domains": [
+        "dca.rtaf.mi.th"
+      ],
+      "file_url_regex": "/web/content/\\d+",
+      "link_only_regex": "drive\\.google\\.com/file/d/",
+      "file_link_selector": "main a[href], #wrap a[href]",
+      "group_is_category": true,
+      "default_category": "คำสั่ง/ระเบียบ/แผน",
+      "default_tags": []
+    },
+    {
+      "id": "rtaf-dca-published",
+      "enabled": true,
+      "dept": "กร.ทอ.",
+      "name": "กรมกิจการพลเรือนทหารอากาศ — เอกสารเผยแพร่ (หนังสือ flipbook: เก็บเป็นรายการลิงก์)",
+      "start_urls": [
+        "https://dca.rtaf.mi.th/e-ksaarephyaephr"
+      ],
+      "allow_domains": [
+        "dca.rtaf.mi.th"
+      ],
+      "file_url_regex": "/web/content/\\d+",
+      "link_only_regex": "magazine\\.rtaf\\.mi\\.th/|fliphtml5\\.com/",
+      "file_link_selector": "main a[href], #wrap a[href]",
+      "default_category": "เอกสารเผยแพร่",
+      "default_tags": []
+    },
+    {
+      "id": "rtaf-comptroller-downloads",
+      "enabled": true,
+      "dept": "สปช.ทอ.",
+      "name": "สำนักปลัดบัญชีทหารอากาศ — เอกสารดาวน์โหลด (รวมเอกสารในเมนู ยกเว้นไฟล์ .rar)",
+      "start_urls": [
+        "https://comptroller.rtaf.mi.th/downloadfiles"
+      ],
+      "allow_domains": [
+        "comptroller.rtaf.mi.th"
+      ],
+      "file_url_regex": "\\.(pdf|xlsx?)(\\?|$)",
+      "link_only_regex": "drive\\.google\\.com/file/d/",
+      "file_link_selector": "a[href]",
+      "default_category": "เอกสารดาวน์โหลด",
+      "default_tags": []
+    },
+    {
+      "id": "rtaf-finance-kpr",
+      "enabled": true,
+      "dept": "กง.ทอ.",
+      "name": "กรมการเงินทหารอากาศ — กพร.กง.ทอ. (แผนปฏิบัติราชการ ฯลฯ)",
+      "start_urls": [
+        "https://finance.rtaf.mi.th/kphr-kng-th"
+      ],
+      "allow_domains": [
+        "finance.rtaf.mi.th"
+      ],
+      "file_url_regex": "/web/content/\\d+",
+      "file_link_selector": "#wrap a[href]",
+      "title_from": "before",
+      "default_category": "แผน",
+      "default_tags": [
+        "กพร.กง.ทอ."
+      ]
+    },
+    {
+      "id": "rtaf-finance-risk",
+      "enabled": true,
+      "dept": "กง.ทอ.",
+      "name": "กรมการเงินทหารอากาศ — บริหารความเสี่ยง",
+      "start_urls": [
+        "https://finance.rtaf.mi.th/brihaarkhwaamesiiyng"
+      ],
+      "allow_domains": [
+        "finance.rtaf.mi.th"
+      ],
+      "file_url_regex": "/web/content/\\d+",
+      "file_link_selector": "#wrap a[href]",
+      "default_category": "แผน",
+      "default_tags": [
+        "บริหารความเสี่ยง"
+      ]
+    },
+    {
+      "id": "rtaf-finance-gfmis",
+      "enabled": true,
+      "dept": "กง.ทอ.",
+      "name": "กรมการเงินทหารอากาศ — โฟลเดอร์ Google Drive 'NEW GFMIS' (ลิงก์จากแบนเนอร์หน้าแรก; Drive ห้ามดึงอัตโนมัติ จึงระบุรายการเอง)",
+      "source_page": "https://drive.google.com/drive/folders/1Vhmwtz58Yo5mQQqQ5CobYwBHAd8_fWYY",
+      "default_category": "คู่มือ",
+      "default_tags": [
+        "NEW GFMIS"
+      ],
+      "items": [
+        {
+          "title": "แบบฝึกหัดระบบบัญชีแยกประเภท GL",
+          "url": "https://drive.google.com/file/d/1B0R9TxlafDifPFfwfXj2PmYgzvFFu54i/view",
+          "year": 2564,
+          "sizeMB": 0.1
+        },
+        {
+          "title": "แบบฝึกหัดระบบ RP (กองคลัง)",
+          "url": "https://drive.google.com/file/d/1zuSifYLA5kiREO7yj-0l8vH40ABe1ulh/view",
+          "year": 2564,
+          "sizeMB": 0.1
+        },
+        {
+          "title": "ฝึกอบรมหน่วยเบิกจ่าย GFMIS Thai Overview_v1",
+          "url": "https://drive.google.com/file/d/1N-LKM71dyuAzD3MACHK5hnBCHYfUKjFD/view",
+          "year": 2564,
+          "sizeMB": 3.4
+        },
+        {
+          "title": "ระบบบัญชีแยกประเภททั่วไป กองคลัง v.2",
+          "url": "https://drive.google.com/file/d/1kOtezmkiiI2HmdRqtacsJbBaH6DImPYE/view",
+          "year": 2564,
+          "sizeMB": 57.2
+        },
+        {
+          "title": "เอกสารอบรมระบบเบิกจ่าย_กองคลัง_22.03.64_Part1",
+          "url": "https://drive.google.com/file/d/1B2xo_Er8Wlhy-BO2Tp0oY5vBDcZt_VDg/view",
+          "year": 2564,
+          "sizeMB": 45
+        },
+        {
+          "title": "เอกสารอบรมระบบเบิกจ่าย_กองคลัง_22.03.64_Part2",
+          "url": "https://drive.google.com/file/d/1wAxMpfZ29D3FmSV2-5fiCxydqZpZQCGr/view",
+          "year": 2564,
+          "sizeMB": 44.3
+        },
+        {
+          "title": "เอกสารอบรมระบบเบิกจ่าย_กองคลัง_22.03.64_Part3",
+          "url": "https://drive.google.com/file/d/10oxWdhsnyUIVhWhB8bKAYcqA_nuvmKsq/view",
+          "year": 2564,
+          "sizeMB": 44.3
+        },
+        {
+          "title": "เอกสารอบรมระบบเบิกจ่าย_กองคลัง_22.03.64_Part4",
+          "url": "https://drive.google.com/file/d/1HYJC27P5bvooBvtqvRTQeJcaSZLR4dDq/view",
+          "year": 2564,
+          "sizeMB": 44.5
+        },
+        {
+          "title": "เอกสารอบรมระบบเบิกจ่าย_กองคลัง_22.03.64_Part5",
+          "url": "https://drive.google.com/file/d/1dxkrzTUDBisSbJVWBbEyOlNXwnLUpkfI/view",
+          "year": 2564,
+          "sizeMB": 44.7
+        },
+        {
+          "title": "เอกสารอบรมระบบเบิกจ่าย_กองคลัง_22.03.64_Part6",
+          "url": "https://drive.google.com/file/d/1WYbs6u_1hOFW7EhH4RC0cpDwCRp9Omhc/view",
+          "year": 2564,
+          "sizeMB": 34.3
+        },
+        {
+          "title": "FA New GFMIS_กองคลัง",
+          "url": "https://drive.google.com/file/d/14VwU8ik7Z6Jjb6aTdEaE9nNmfnBXXzK7/view",
+          "year": 2564,
+          "sizeMB": 19.9
+        },
+        {
+          "title": "New GFMIS FM กองคลัง V1.0",
+          "url": "https://drive.google.com/file/d/1Ul9noTVXKK4AgaGG1N_tG_O8K8HZKw8J/view",
+          "year": 2564,
+          "sizeMB": 15.3
+        },
+        {
+          "title": "NEW GFMIS PO กองคลัง 19.03.2021",
+          "url": "https://drive.google.com/file/d/1AlHhOmVuCNWacop9sX3hNAdZnFXnNjvi/view",
+          "year": 2564,
+          "sizeMB": 19.9
+        }
+      ]
+    },
+    {
+      "id": "rtaf-inspec-procedure",
+      "enabled": true,
+      "dept": "จร.ทอ.",
+      "name": "กรมจเรทหารอากาศ — คำสั่ง/ระเบียบ/คู่มือ/พ.ร.บ.วินัยทหาร (หน้า ?page=procedure)",
+      "start_urls": [
+        "http://www.inspec.rtaf.mi.th/inspec%20new/home.php?page=procedure"
+      ],
+      "allow_domains": [
+        "inspec.rtaf.mi.th"
+      ],
+      "file_url_regex": "\\.(pdf|docx?|xlsx?)(\\?|$)",
+      "file_link_selector": "main a[href]",
+      "group_heading_selector": "main h3.shadow-text",
+      "group_is_category": true,
+      "default_category": "เอกสารจเร",
+      "default_tags": []
+    },
+    {
+      "id": "rtaf-safety-standards",
+      "enabled": true,
+      "dept": "สนภ.ทอ.",
+      "name": "สำนักงานนิรภัยทหารอากาศ — มาตรฐาน (กฎหมาย ระเบียบ คำสั่ง คู่มือ แผน คำแนะนำด้านนิรภัย)",
+      "start_urls": [
+        "https://safety.rtaf.mi.th/standards"
+      ],
+      "allow_domains": [
+        "safety.rtaf.mi.th"
+      ],
+      "file_url_regex": "/web/content/\\d+",
+      "file_link_selector": "#wrap a[href]",
+      "default_category": "มาตรฐานนิรภัย",
+      "default_tags": [],
+      "url_rewrites": {
+        "/web/content/35567/": "/web/content/3557/",
+        "/web/content/35568/": "/web/content/3558/"
+      },
+      "_note": "ลิงก์ p02/p03 บนเว็บต้นทางพิมพ์เลขผิด (35567/35568) แก้เป็น 3557/3558 ซึ่งตรวจแล้วเป็นไฟล์ p02.pdf/p03.pdf จริง"
+    },
+    {
+      "id": "rtaf-safety-actionplan",
+      "enabled": true,
+      "dept": "สนภ.ทอ.",
+      "name": "สำนักงานนิรภัยทหารอากาศ — แผนปฏิบัติราชการ",
+      "start_urls": [
+        "https://safety.rtaf.mi.th/actionplan"
+      ],
+      "allow_domains": [
+        "safety.rtaf.mi.th"
+      ],
+      "file_url_regex": "/web/content/\\d+",
+      "file_link_selector": "#wrap a[href]",
+      "default_category": "แผน",
+      "default_tags": []
+    },
+    {
+      "id": "rtaf-maa-public",
+      "enabled": true,
+      "dept": "สบน.ทอ.",
+      "name": "สำนักงานการบินทหารอากาศ — ไฟล์สาธารณะ (คลังความรู้, ดาวน์โหลด, เอกสารสิทธิกำลังพล/แบบฟอร์มใบลา, คู่มืออบรม MAA). ระบบ slides ต้องล็อกอิน จึงไม่ดึง",
+      "start_urls": [
+        "https://maa.rtaf.mi.th/khlangkhwaamruu",
+        "https://maa.rtaf.mi.th/daawnohld",
+        "https://maa.rtaf.mi.th/blog/empic-6/empic-guide-85",
+        "https://maa.rtaf.mi.th/blog/e-ksaarsiththikamlangphl-3/aiblaa-upsmbth-19",
+        "https://maa.rtaf.mi.th/blog/e-ksaarsiththikamlangphl-3/aiblaaphakph-npracchampii-18",
+        "https://maa.rtaf.mi.th/blog/e-ksaarsiththikamlangphl-3/aiblaaphakph-npracchampii-aip-tpth-17",
+        "https://maa.rtaf.mi.th/blog/e-ksaarsiththikamlangphl-3/aiblaapwy-16",
+        "https://maa.rtaf.mi.th/blog/e-ksaarsiththikamlangphl-3/aiblaachwyehluue-phriyaakhl-dbutr-15",
+        "https://maa.rtaf.mi.th/blog/e-ksaarsiththikamlangphl-3/aiblaakhl-dbutr-14",
+        "https://maa.rtaf.mi.th/blog/e-ksaarsiththikamlangphl-3/aiblaakicch-13",
+        "https://maa.rtaf.mi.th/blog/e-ksaarsiththikamlangphl-3/aebbraayngaankh-baanphak-aasayk-ngthaph-aakaas-12"
+      ],
+      "allow_domains": [
+        "maa.rtaf.mi.th"
+      ],
+      "file_url_regex": "/web/content/\\d+",
+      "file_link_selector": "#wrap a[href]",
+      "default_category": "เอกสารสบน.",
+      "default_tags": []
+    },
+    {
+      "id": "rtaf-maa-slides",
+      "enabled": true,
+      "dept": "สบน.ทอ.",
+      "name": "สำนักงานการบินทหารอากาศ — คอร์ส 'เอกสารและระเบียบที่เกี่ยวข้อง' (สไลด์ Preview สาธารณะ; ไฟล์อยู่บน Google Drive → เก็บเป็นลิงก์)",
+      "odoo_slides_channel": "https://maa.rtaf.mi.th/slides/e-ksaaraelaraebiiybthiiekiiywkh-ng-1",
+      "group_is_category": true,
+      "default_category": "เอกสารสบน.",
+      "default_tags": []
+    },
+    {
+      "id": "rtaf-legal-home",
+      "enabled": true,
+      "dept": "สธน.ทอ.",
+      "name": "สธน.ทอ. (legal.rtaf.mi.th) — เอกสารหน้าแรก (นโยบาย/ประกาศ/ระเบียบจริยธรรม)",
+      "start_urls": [
+        "https://legal.rtaf.mi.th/home"
+      ],
+      "allow_domains": [
+        "legal.rtaf.mi.th"
+      ],
+      "file_url_regex": "/web/content/\\d+",
+      "file_link_selector": "#wrap a[href]",
+      "default_category": "เอกสาร สธน.",
+      "default_tags": []
+    },
+    {
+      "id": "rtaf-legal-aviation-law",
+      "enabled": true,
+      "dept": "สธน.ทอ.",
+      "name": "สธน.ทอ. — กฎหมายลำดับรองตาม พ.ร.บ.การปฏิบัติต่ออากาศยานที่กระทำผิดกฎหมาย พ.ศ.2553 (การ์ดลิงก์ไปเว็บหน่วยงานอื่น: ถ้าเป็น PDF ที่เปิดได้ปกติจะดึงเนื้อหามาด้วย ไม่งั้นเก็บเป็นลิงก์)",
+      "start_urls": [
+        "https://legal.rtaf.mi.th/aviation-law"
+      ],
+      "cards": {
+        "item": "article.air-law-card",
+        "group": "h3",
+        "title": "p",
+        "link": "a.air-law-btn",
+        "download": true
+      },
+      "default_category": "กฎหมาย",
+      "default_tags": [
+        "กฎหมายการบิน"
+      ]
+    },
+    {
+      "id": "rtaf-cyber-docs",
+      "enabled": true,
+      "dept": "ศซบ.ทอ.",
+      "name": "ศูนย์ไซเบอร์กองทัพอากาศ (ศซบ.ทอ.) — กฎหมาย/ระเบียบ/นโยบาย, คู่มืองบประมาณ, เอกสารเผยแพร่, ความรู้ความปลอดภัยไซเบอร์ (ไฟล์อยู่ที่ cyberportal.rtaf.mi.th เป็นการ์ดรูปปก → ตั้งชื่อจากเนื้อไฟล์)",
+      "start_urls": [
+        "https://cyber.rtaf.mi.th/home",
+        "https://cyber.rtaf.mi.th/kthmaay-raebiiyb-aelanoybaaykaarraksaakhwaammankhngpl-dphaythaangaicheb-r",
+        "https://cyber.rtaf.mi.th/khuumuue-pdibatiekiiywkabngbpramaan-prak-braebiiyb-th-waadwykaarngbpramaan-ph-s-2565",
+        "https://cyber.rtaf.mi.th/cyber-awareness-e-admin",
+        "https://cyber.rtaf.mi.th/e-ksaarephyaephr-1",
+        "https://cyber.rtaf.mi.th/kaaraichngaan-upkrn-aelaekhruue-khaay-yaangpl-dphay",
+        "https://cyber.rtaf.mi.th/kaaraichsuue-sangkhm-nailn-yaangpl-dphay-1"
+      ],
+      "allow_domains": [
+        "cyber.rtaf.mi.th"
+      ],
+      "file_url_regex": "/web/content/\\d+|\\.pdf(\\?|$)",
+      "link_only_regex": "ratchakitcha\\.soc\\.go\\.th/DATA/",
+      "file_link_selector": "#wrap a[href]",
+      "title_from_pdf": true,
+      "default_category": "เอกสารไซเบอร์",
+      "default_tags": [],
+      "title_from_img": true,
+      "title_overrides": {
+        "พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคลพ": "พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562",
+        "วิชาการใช้ระบบสารบรรณอิเล็กทรอนิกส์และไ": "เอกสารประกอบการบรรยาย วิชาระบบสารบรรณอิเล็กทรอนิกส์และไปรษณีย์อิเล็กทรอนิกส์ พ.ศ. 2567",
+        "แผนปฏิบัติราชการของศซบ": "แผนปฏิบัติราชการ ศูนย์ไซเบอร์กองทัพอากาศ (ศซบ.ทอ.) ประจำปีงบประมาณ พ.ศ. 2569",
+        "3โซเชียลเน็ตเวิค": "การใช้สื่อสังคมออนไลน์อย่างปลอดภัย (โซเชียลเน็ตเวิร์ก)",
+        "วิธีใช้อินเทอร์เน็ตอย่างปลอดภัย-ปก": "วิธีใช้อินเทอร์เน็ตอย่างปลอดภัย",
+        "วิธีเพิ่มความปลอดภัยให้กับระบบ IoT-ปก": "15 วิธีเพิ่มความปลอดภัยให้กับระบบ IoT"
+      }
+    },
+    {
+      "id": "rtaf-aocc-plan",
+      "enabled": true,
+      "dept": "คปอ.",
+      "name": "กองบัญชาการควบคุมการปฏิบัติทางอากาศ (คปอ.) — แผนปฏิบัติราชการ ปี 2569 (แนบในข่าวประชุม)",
+      "start_urls": [
+        "https://aocc.rtaf.mi.th/blog/khaawkicchkrrm-khp-2/prachumephuue-etriiymkhwaamphr-mt-sthaankaarn-aelakaarptibatiraachkaartaamaephnptibatiraachkaar-pracchampiingbpramaan-ph-s-2569-260"
+      ],
+      "allow_domains": [
+        "aocc.rtaf.mi.th"
+      ],
+      "file_url_regex": "/web/content/\\d+",
+      "file_link_selector": "#wrap a[href]",
+      "default_category": "แผน",
+      "default_tags": []
+    },
+    {
+      "id": "rtaf-aocc-emblem",
+      "enabled": true,
+      "dept": "คปอ.",
+      "name": "คปอ. — ประกาศ สนร. เรื่องภาพเครื่องหมายราชการ (ลิงก์ Google Drive จากหน้า สัญลักษณ์หน่วย ระบุเอง)",
+      "source_page": "https://aocc.rtaf.mi.th/saylaksnhnwy",
+      "default_category": "ประกาศ",
+      "default_tags": [],
+      "items": [
+        {
+          "title": "ประกาศสำนักนายกรัฐมนตรี เรื่อง กำหนดภาพเครื่องหมายราชการ ตามพระราชบัญญัติเครื่องหมายราชการ พุทธศักราช ๒๔๘๒(ฉบับที่ ๓๒๔)",
+          "url": "https://drive.google.com/file/d/1pyFEz19HOpPuYOhmlgZ8CdS7nrgUl4ex/view"
+        }
+      ]
+    },
+    {
+      "id": "rtaf-aocc-drive-folders",
+      "enabled": true,
+      "dept": "คปอ.",
+      "name": "คปอ. — โฟลเดอร์ Google Drive จากหน้าแรก 'ข้อมูลเผยแพร่' (ตำราเรียน, KM) ระบุเอง: Drive ห้ามดึงอัตโนมัติ และไม่ได้แตกไฟล์ในโฟลเดอร์ย่อย",
+      "source_page": "https://aocc.rtaf.mi.th/home",
+      "default_category": "ตำรา/KM",
+      "default_tags": [],
+      "items": [
+        {
+          "title": "ตำราเรียนสายวิทยาการถ่ายรูป (โฟลเดอร์ Google Drive)",
+          "url": "https://drive.google.com/drive/folders/1qaq1wMAOKZh5JV27IUf-Jcn6GpfvUYfd",
+          "tags": [
+            "ตำราเรียน"
+          ],
+          "category": "ตำราเรียน"
+        },
+        {
+          "title": "ตำราเรียนสายวิทยาการถ่ายรูป: 1 ความรู้สายถ่ายรูป (โฟลเดอร์ Drive)",
+          "url": "https://drive.google.com/drive/folders/173gbqjMLxAJfdFsttqgPSS92n7BgpFBK",
+          "tags": [
+            "ตำราเรียน"
+          ],
+          "category": "ตำราเรียน"
+        },
+        {
+          "title": "ตำราเรียนสายวิทยาการถ่ายรูป: 2 ความรู้สายข่าวกรอง (โฟลเดอร์ Drive)",
+          "url": "https://drive.google.com/drive/folders/1-AGjZjNOIT9PgeSSKG43EXjqbYdfrrg4",
+          "tags": [
+            "ตำราเรียน"
+          ],
+          "category": "ตำราเรียน"
+        },
+        {
+          "title": "ตำราเรียนสายวิทยาการถ่ายรูป: 3 ความรู้ น.สัญญาบัตร (โฟลเดอร์ Drive)",
+          "url": "https://drive.google.com/drive/folders/1DQJ8BjsbqYI7BbVuc0TtpePbf3OSqKS2",
+          "tags": [
+            "ตำราเรียน"
+          ],
+          "category": "ตำราเรียน"
+        },
+        {
+          "title": "ตำราเรียนสายวิทยาการถ่ายรูป: 4 ความรู้การใช้กำลังทางอากาศ (โฟลเดอร์ Drive)",
+          "url": "https://drive.google.com/drive/folders/1ooaCxr4HOhQijGDGwkUAKEw5MfiQAAWG",
+          "tags": [
+            "ตำราเรียน"
+          ],
+          "category": "ตำราเรียน"
+        },
+        {
+          "title": "คลังปัญหาสอบ สายวิทยาการเหล่าถ่ายรูปทางอากาศ จำพวกทหารลาดตระเวนทางอากาศและภูมิสารสนเทศ (โฟลเดอร์ Drive)",
+          "url": "https://drive.google.com/drive/folders/1iMMvuTWixuNP0Oqw4g4i7iamAJdfLJb1",
+          "tags": [
+            "ตำราเรียน"
+          ],
+          "category": "ตำราเรียน"
+        },
+        {
+          "title": "การจัดการความรู้ คปอ. (KM): นวัตกรรมที่ได้รับรางวัลระดับ ทอ. (โฟลเดอร์ Google Drive)",
+          "url": "https://drive.google.com/drive/folders/1JdhXU_tBlOQqB4qU-a_P_xk1k0ss_pdG",
+          "tags": [
+            "KM"
+          ],
+          "category": "KM"
+        },
+        {
+          "title": "นวัตกรรมที่ได้รับรางวัลระดับ ทอ. ปี 2564 (โฟลเดอร์ Drive)",
+          "url": "https://drive.google.com/drive/folders/1ZW9tJiCwst1p4AOf4P6MLb1qVouYCpvx",
+          "tags": [
+            "KM"
+          ],
+          "category": "KM"
+        },
+        {
+          "title": "นวัตกรรมที่ได้รับรางวัลระดับ ทอ. ปี 2565 (โฟลเดอร์ Drive)",
+          "url": "https://drive.google.com/drive/folders/1oYnx6cBWWZRx44RDpv2MHthxsVqSb-1W",
+          "tags": [
+            "KM"
+          ],
+          "category": "KM"
+        },
+        {
+          "title": "นวัตกรรมที่ได้รับรางวัลระดับ ทอ. ปี 2566 (โฟลเดอร์ Drive)",
+          "url": "https://drive.google.com/drive/folders/1ISYVeU9500KscwaOnxEjbECEqFi1M71Z",
+          "tags": [
+            "KM"
+          ],
+          "category": "KM"
+        },
+        {
+          "title": "นวัตกรรมที่ได้รับรางวัลระดับ ทอ. ปี 2567 (โฟลเดอร์ Drive)",
+          "url": "https://drive.google.com/drive/folders/1t5yjWXgXr1RWhxhJ98wzIJ5LuAnTfyNr",
+          "tags": [
+            "KM"
+          ],
+          "category": "KM"
+        }
+      ]
+    },
+    {
+      "id": "rtaf-dae-textbook",
+      "enabled": true,
+      "dept": "ชอ.ทอ.",
+      "name": "กรมช่างอากาศ (ชอ.ทอ.) — ตำราสายวิทยาการช่างอากาศ (dae.rtaf.mi.th/aeronautical-engineering-textbook)",
+      "start_urls": [
+        "https://dae.rtaf.mi.th/aeronautical-engineering-textbook"
+      ],
+      "allow_domains": [
+        "dae.rtaf.mi.th"
+      ],
+      "file_url_regex": "/web/content/\\d+",
+      "file_link_selector": "#wrap a[href]",
+      "group_heading_selector": "#wrap h2",
+      "default_category": "ตำราช่างอากาศ",
+      "default_tags": []
+    },
+    {
+      "id": "rtaf-comm-docs",
+      "enabled": true,
+      "dept": "สอ.ทอ.",
+      "name": "กรมสื่อสารอิเล็กทรอนิกส์ทหารอากาศ (สอ.ทอ.) — ตำราสื่อสาร 67 (?page_id=40209) และ 'กฏหมายที่เกี่ยวข้องกับข้าราชการทหาร' (?page_id=70933 ซึ่งมีแค่ 2 ลิงก์ไปตำราชุดเดียวกัน) เว็บ WordPress ไม่มี sitemap จึงระบุหน้าเอง; หน้าอื่น (แผนปฏิบัติราชการ ?page_id=73483, ว.กรมบัญชีกลาง ?p=47669/47624/47606) ยังไม่ได้เอา",
+      "start_urls": [
+        "https://comm.rtaf.mi.th/?page_id=40209",
+        "https://comm.rtaf.mi.th/?page_id=70933"
+      ],
+      "allow_domains": [
+        "comm.rtaf.mi.th"
+      ],
+      "file_url_regex": "wp-content/uploads/[^?#]*\\.(pdf|docx?|xlsx?)(?:\\?|$)",
+      "file_link_selector": "a[href]",
+      "title_from_pdf": true,
+      "default_category": "เอกสาร สอ.ทอ.",
+      "default_tags": []
+    },
+    {
+      "id": "rtaf-arm-docs",
+      "enabled": true,
+      "dept": "สพ.ทอ.",
+      "name": "กรมสรรพาวุธทหารอากาศ (สพ.ทอ.) — เอกสารเผยแพร่ (คำสั่ง/ระเบียบ/แผน/แบบฟอร์ม), ระเบียบ/คู่มือ/การแต่งกาย, ระเบียบเพิ่มเติม, คู่มือ IT",
+      "start_urls": [
+        "https://arm.rtaf.mi.th/publisheddocuments",
+        "https://arm.rtaf.mi.th/raebiiyb/khuumuue/kaaraetngkaay",
+        "https://arm.rtaf.mi.th/ephimetim",
+        "https://arm.rtaf.mi.th/khuumuue"
+      ],
+      "allow_domains": [
+        "arm.rtaf.mi.th"
+      ],
+      "file_url_regex": "/web/content/\\d+",
+      "file_link_selector": "#wrap a[href]",
+      "group_heading_selector": "#wrap h1, #wrap h2, #wrap h3, #wrap h4",
+      "default_category": "เอกสาร สพ.ทอ.",
+      "default_tags": []
+    },
+    {
+      "id": "rtaf-arm-links",
+      "enabled": true,
+      "dept": "สพ.ทอ.",
+      "name": "สพ.ทอ. — หนังสือพลิกบนหน้าแรก (AnyFlip) ระบุเอง",
+      "source_page": "https://arm.rtaf.mi.th/home",
+      "default_category": "เอกสารเผยแพร่",
+      "default_tags": [],
+      "items": [
+        {
+          "title": "ตำนานสรรพาวุธ 2564 (หนังสือพลิก AnyFlip)",
+          "url": "https://anyflip.com/ooths/gceq/"
+        }
+      ]
+    },
+    {
+      "id": "rtaf-medical-docs",
+      "enabled": true,
+      "dept": "พอ.ทอ.",
+      "name": "กรมแพทย์ทหารอากาศ (พอ.ทอ.) — เว็บ Joomla ไม่มี sitemap: คำสั่งแต่งตั้ง คณก./คณะทำงาน และบริการการศึกษา พอ. เอาเฉพาะชื่อที่มี ระเบียบ/คำสั่ง/คู่มือ (ตามขอบเขต) — ไม่เอาแผน/จัดซื้อจัดจ้าง/รับสมัคร/รายชื่อผู้ได้รับทุน",
+      "start_urls": [
+        "https://medical.rtaf.mi.th/index.php?option=com_content&view=article&id=33&Itemid=412",
+        "https://medical.rtaf.mi.th/index.php?option=com_content&view=article&id=53&Itemid=418"
+      ],
+      "allow_domains": [
+        "medical.rtaf.mi.th"
+      ],
+      "file_url_regex": "\\.(pdf|docx?|xlsx?)(?:\\?|$)",
+      "link_only_regex": "drive\\.google\\.com/file/d/",
+      "file_link_selector": ".item-page a[href], [itemprop=articleBody] a[href]",
+      "title_from_pdf": true,
+      "title_strip": " - กรมแพทย์ทหารอากาศ.*$",
+      "default_category": "เอกสาร พอ.ทอ.",
+      "default_tags": [],
+      "title_must_match": "ระเบียบ|คำสั่ง|คู่มือ"
+    },
+    {
+      "id": "rtaf-medical-downloads",
+      "enabled": true,
+      "dept": "พอ.ทอ.",
+      "name": "พอ.ทอ. — หน้า 'เอกสารดาวน์โหลด พอ.' เอาทุกไฟล์ (ผู้ใช้สั่งชัดเจน ยกเว้นจากขอบเขตระเบียบ/คำสั่ง/คู่มือ)",
+      "start_urls": [
+        "https://medical.rtaf.mi.th/index.php?option=com_content&view=article&id=25&Itemid=406"
+      ],
+      "allow_domains": [
+        "medical.rtaf.mi.th"
+      ],
+      "file_url_regex": "\\.(pdf|docx?|xlsx?)(?:\\?|$)",
+      "link_only_regex": "drive\\.google\\.com/file/d/",
+      "file_link_selector": ".item-page a[href], [itemprop=articleBody] a[href]",
+      "title_from_pdf": true,
+      "title_strip": " - กรมแพทย์ทหารอากาศ.*$",
+      "default_category": "เอกสารดาวน์โหลด พอ.",
+      "default_tags": [
+        "เอกสารดาวน์โหลด พอ."
+      ]
+    },
+    {
+      "id": "rtaf-civil-km",
+      "enabled": true,
+      "dept": "ชย.ทอ.",
+      "name": "กรมช่างโยธาทหารอากาศ (ชย.ทอ.) — เว็บ PHP/HTML บน IP 164.115.45.75 ไม่มี sitemap: หน้า KM (คู่มือการใช้งานโปรแกรม) เอาเฉพาะชื่อที่มี ระเบียบ/คำสั่ง/คู่มือ (ตามขอบเขต) — โฟลเดอร์ เอกสารเผยแพร่/ (397 ไฟล์ เป็นสื่อการสอน/แบบมาตรฐาน/มาตรฐานครุภัณฑ์ ไม่มีชื่อ ระเบียบ/คำสั่ง/คู่มือ) และข่าว/จัดซื้อจัดจ้างไม่เอา",
+      "start_urls": [
+        "http://164.115.45.75/civil-site/KM/KM.html"
+      ],
+      "allow_domains": [
+        "164.115.45.75"
+      ],
+      "file_url_regex": "[.](pdf|docx?|xlsx?)$",
+      "file_link_selector": "a[href]",
+      "title_must_match": "ระเบียบ|คำสั่ง|คู่มือ",
+      "title_overrides": {
+        ">> คู่มือการใช้งานโปรแกรม": "คู่มือการใช้งานโปรแกรม (การจัดการความรู้ KM ชย.ทอ.)",
+        "คู่มือการใช้งานโปรแกรม": "คู่มือการใช้งานโปรแกรม (การจัดการความรู้ KM ชย.ทอ.)"
+      },
+      "default_category": "คู่มือ",
+      "default_tags": [
+        "KM"
+      ]
+    },
+    {
+      "id": "rtaf-civil-to",
+      "enabled": true,
+      "dept": "ชย.ทอ.",
+      "name": "ชย.ทอ. — คำแนะนำทางเทคนิคสายช่างโยธา: โฟลเดอร์ ระเบียบและคำแนะนำ (หมวดทั่วไป/อาคาร/สนามบิน) อ่านจากรายการไฟล์ของเซิร์ฟเวอร์ผ่าน http (ลิงก์ https ของเว็บใบรับรองไม่ตรงกับ IP)",
+      "start_urls": [
+        "http://164.115.45.75/civil-site/vittayakarn/TO/"
+      ],
+      "dir_index": true,
+      "dir_title_from_folder": true,
+      "title_must_match": "ระเบียบ|คำสั่ง|คู่มือ",
+      "default_category": "ระเบียบ",
+      "default_tags": [
+        "คำแนะนำทางเทคนิคสายช่างโยธา"
+      ]
+    },
+    {
+      "id": "rtaf-civil-sidebar-files",
+      "enabled": true,
+      "dept": "ชย.ทอ.",
+      "name": "ชย.ทอ. — ไฟล์ตามเมนู 'ระบบงานและเอกสารเผยแพร่' ที่ผู้ใช้ขอ (แผนปฏิบัติราชการ ปี 69, รายการก่อสร้าง/วัสดุมาตรฐาน, การบริหารความเสี่ยง RM) ยกเว้นจากขอบเขต",
+      "direct_files": [
+        {
+          "title": "แผนปฏิบัติราชการ ชย.ทอ. ปี 69",
+          "url": "http://164.115.45.75/civil-site/%E0%B9%80%E0%B8%AD%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9C%E0%B8%A2%E0%B9%81%E0%B8%9E%E0%B8%A3%E0%B9%88/%E0%B9%81%E0%B8%9C%E0%B8%99%E0%B8%9B%E0%B8%8F%E0%B8%B4%E0%B8%9A%E0%B8%B1%E0%B8%95%E0%B8%B4%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%81%E0%B8%B2%E0%B8%A3/69.pdf",
+          "group": "แผนปฏิบัติราชการ"
+        },
+        {
+          "title": "รายการก่อสร้างมาตรฐาน ชย.ทอ. ปี 66",
+          "url": "http://164.115.45.75/civil-site/%E0%B9%80%E0%B8%AD%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9C%E0%B8%A2%E0%B9%81%E0%B8%9E%E0%B8%A3%E0%B9%88/%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%81%E0%B9%88%E0%B8%AD%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%90%E0%B8%B2%E0%B8%99/%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%81%E0%B9%88%E0%B8%AD%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%90%E0%B8%B2%E0%B8%99%20%E0%B8%8A%E0%B8%A2.%E0%B8%97%E0%B8%AD.%20%E0%B8%9B%E0%B8%B5%2066.pdf",
+          "group": "รายการมาตรฐาน"
+        },
+        {
+          "title": "รายการวัสดุมาตรฐาน ชย.ทอ. ปี 69",
+          "url": "http://164.115.45.75/civil-site/%E0%B9%80%E0%B8%AD%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9C%E0%B8%A2%E0%B9%81%E0%B8%9E%E0%B8%A3%E0%B9%88/%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A7%E0%B8%B1%E0%B8%AA%E0%B8%94%E0%B8%B8%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%90%E0%B8%B2%E0%B8%99/%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%B1%E0%B8%AA%E0%B8%94%E0%B8%B8%E0%B8%81%E0%B9%88%E0%B8%AD%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%9B%E0%B8%B5%2069.pdf",
+          "group": "รายการมาตรฐาน"
+        },
+        {
+          "title": "การบริหารความเสี่ยง ชย.ทอ.: RB ปี 68",
+          "url": "http://164.115.45.75/civil-site/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%87/RB%20%E0%B8%8A%E0%B8%A2.%E0%B8%97%E0%B8%AD.%20%E0%B8%9B%E0%B8%B568.pdf",
+          "group": "การบริหารความเสี่ยง"
+        },
+        {
+          "title": "การบริหารความเสี่ยง ชย.ทอ.: ทะเบียนความเสี่ยง RR ปี 68",
+          "url": "http://164.115.45.75/civil-site/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%87/%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%9A%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%87_RR_2568.pdf",
+          "group": "การบริหารความเสี่ยง"
+        }
+      ],
+      "default_category": "เอกสาร ชย.ทอ.",
+      "default_tags": []
+    },
+    {
+      "id": "rtaf-civil-sidebar-links",
+      "enabled": true,
+      "dept": "ชย.ทอ.",
+      "name": "ชย.ทอ. — ลิงก์ตามเมนู 'ระบบงานและเอกสารเผยแพร่' ที่ผู้ใช้ขอ (เอกสารสัมมนา/เอกสารฝ่ายอำนวยการบน Google, ระบบงานที่ต้องล็อกอิน — ไม่ได้เข้าสู่ระบบ, โฟลเดอร์แบบมาตรฐาน) ระบุเอง",
+      "source_page": "http://164.115.45.75/civil-site/index1.php",
+      "default_category": "เอกสาร ชย.ทอ.",
+      "default_tags": [],
+      "items": [
+        {
+          "title": "สัมมนาผู้ควบคุมงาน 18 ม.ค.68 (เปิดงาน).pptx",
+          "url": "https://docs.google.com/presentation/d/1FzSPr_Ft-6N-rOKqITwJgIueS_5B2rMK/edit?usp=drive_link&ouid=105674741385384990523&rtpof=true&sd=true",
+          "category": "เอกสารสัมมนา",
+          "tags": [
+            "สัมมนาผู้ควบคุมงาน"
+          ]
+        },
+        {
+          "title": "ทัศนคติที่ดี หน. หยง 1 ก.ย.66(7-1-68).pptx",
+          "url": "https://docs.google.com/presentation/d/1pnhev-duV3yEy0uCKR4Bgr3_4q-QzO67/edit?usp=drive_link&ouid=105674741385384990523&rtpof=true&sd=true",
+          "category": "เอกสารสัมมนา",
+          "tags": [
+            "สัมมนาผู้ควบคุมงาน"
+          ]
+        },
+        {
+          "title": "สัมมนา 23-24 ชย.ทอ. (โครงสร้าง+สถาปัต) 18 ม.ค.68 ปิยะ.pdf",
+          "url": "https://drive.google.com/file/d/1CNasI-PXLfEsjCgvqg9nsudJdhC9nHlc/view?usp=drive_link",
+          "category": "เอกสารสัมมนา",
+          "tags": [
+            "สัมมนาผู้ควบคุมงาน"
+          ]
+        },
+        {
+          "title": "เฉลย Check List อาคารเครื่องฝึกบินจำลอง 18 ม.ค.68.pdf",
+          "url": "https://drive.google.com/file/d/1Bb8TgDowSYFhP8phWhQv88yFfBIWt2ys/view?usp=drive_link",
+          "category": "เอกสารสัมมนา",
+          "tags": [
+            "สัมมนาผู้ควบคุมงาน"
+          ]
+        },
+        {
+          "title": "การจัดทำ QR ของหน่วย",
+          "url": "https://drive.google.com/drive/folders/1mQ0uC7c8k7Y40rC1eOAkoravfdV6r7VC?usp=sharing",
+          "category": "เอกสารฝ่ายอำนวยการ",
+          "tags": [
+            "เอกสารฝ่ายอำนวยการ"
+          ]
+        },
+        {
+          "title": "แจ้งความต้องการครุภัณฑ์ ชย.ทอ.64",
+          "url": "https://drive.google.com/drive/folders/1U2X7-7ApDDi5d894LoWyI09-FHruHjgd?usp=sharing",
+          "category": "เอกสารฝ่ายอำนวยการ",
+          "tags": [
+            "เอกสารฝ่ายอำนวยการ"
+          ]
+        },
+        {
+          "title": "สถานภาพเครื่องทุ่นแรงและครุภัณฑ์สายช่างโยธา",
+          "url": "https://sites.google.com/view/cereport/%E0%B8%AB%E0%B8%99%E0%B8%B2%E0%B9%81%E0%B8%A3%E0%B8%81",
+          "category": "เอกสารฝ่ายอำนวยการ",
+          "tags": [
+            "เอกสารฝ่ายอำนวยการ"
+          ]
+        },
+        {
+          "title": "ระบบจัดเก็บและค้นหาคำสั่ง ชย.ทอ. (ต้องล็อกอิน)",
+          "url": "http://164.115.45.75/commandCivil/login1.php",
+          "category": "ระบบงาน",
+          "tags": [
+            "ระบบงาน ชย.ทอ."
+          ]
+        },
+        {
+          "title": "ระบบรายงานตามคำสั่ง ทอ.(เฉพาะ) ที่ 112/46 (ต้องล็อกอิน)",
+          "url": "http://164.115.45.75/112/login.php",
+          "category": "ระบบงาน",
+          "tags": [
+            "ระบบงาน ชย.ทอ."
+          ]
+        },
+        {
+          "title": "สืบค้นคุณลักษณะเฉพาะและแจ้งความต้องการครุภัณฑ์ (ต้องล็อกอิน)",
+          "url": "http://164.115.45.75/spec/",
+          "category": "ระบบงาน",
+          "tags": [
+            "ระบบงาน ชย.ทอ."
+          ]
+        },
+        {
+          "title": "บันทึกการประชุม ชย.ทอ. (ต้องล็อกอิน)",
+          "url": "http://164.115.45.75/civil-site/login%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B6%E0%B8%81%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%8A%E0%B8%B8%E0%B8%A1.php",
+          "category": "ระบบงาน",
+          "tags": [
+            "ระบบงาน ชย.ทอ."
+          ]
+        },
+        {
+          "title": "ระบบจัดเก็บภาพภารกิจและกิจกรรม ชย.ทอ. (ต้องล็อกอิน)",
+          "url": "http://164.115.45.75/photoup/loginuser.php",
+          "category": "ระบบงาน",
+          "tags": [
+            "ระบบงาน ชย.ทอ."
+          ]
+        },
+        {
+          "title": "เอกสารประกอบการเรียนการสอนสายวิทยาการช่างโยธา (ต้องล็อกอิน)",
+          "url": "http://164.115.45.75/civil-site/%E0%B9%80%E0%B8%AD%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9C%E0%B8%A2%E0%B9%81%E0%B8%9E%E0%B8%A3%E0%B9%88/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%AD%E0%B8%99%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%82%E0%B8%A2%E0%B8%98%E0%B8%B2/%E0%B9%80%E0%B8%AD%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99.php",
+          "category": "ระบบงาน",
+          "tags": [
+            "ระบบงาน ชย.ทอ."
+          ]
+        },
+        {
+          "title": "ศูนย์ปฏิบัติการที่ใช้เครือข่ายเป็นศูนย์กลาง ชย.ทอ. (I-Civil)",
+          "url": "https://sites.google.com/view/i-civil-link/home",
+          "category": "ระบบงาน",
+          "tags": [
+            "ระบบงาน ชย.ทอ."
+          ]
+        },
+        {
+          "title": "แบบก่อสร้างมาตรฐาน ทอ. ปี 66 (โฟลเดอร์แบบมาตรฐาน: แบบ AutoCAD ภาพ และเอกสาร)",
+          "url": "http://164.115.45.75/civil-site/%E0%B9%80%E0%B8%AD%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%9C%E0%B8%A2%E0%B9%81%E0%B8%9E%E0%B8%A3%E0%B9%88/%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%90%E0%B8%B2%E0%B8%99/",
+          "category": "แบบมาตรฐาน",
+          "tags": [
+            "แบบมาตรฐาน"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rtaf-transport-drive",
+      "enabled": true,
+      "dept": "ขส.ทอ.",
+      "name": "กรมขนส่งทหารอากาศ (ขส.ทอ.) — โฟลเดอร์ Google Drive '06. กรมขนส่งทหารอากาศ' ของผู้ใช้ (อ่านรายชื่อผ่านเครื่องมือเชื่อมต่อ Drive ของบัญชีผู้ใช้; ข้อความที่ Drive สกัดให้สระ/วรรณยุกต์หาย จึงเก็บเป็นลิงก์ ค้นจากชื่อ)",
+      "source_page": "https://drive.google.com/drive/folders/1HCeF3zQDAbflvGfGo9sSBKp1Wr3D3mwy",
+      "default_category": "ระเบียบ",
+      "default_tags": [],
+      "items": [
+        {
+          "title": "ระเบียบ ทอ. ว่าด้วยการขนส่ง (ฉบับที่ 1) พ.ศ.2536 (ยกเลิกใช้งาน)",
+          "url": "https://drive.google.com/file/d/1BAGEQVwKcxnufXFRqRffAmBPs3xNlaRA/view",
+          "year": 2536,
+          "status": "ยกเลิกแล้ว",
+          "sizeMB": 0.3
+        },
+        {
+          "title": "ระเบียบ ทอ. ว่าด้วยการขนส่ง (ฉบับที่ 2) พ.ศ.2537 (ยกเลิกใช้งาน)",
+          "url": "https://drive.google.com/file/d/1xdpcJG8kQQekjkOz093dSqQLOZBfITU8/view",
+          "year": 2537,
+          "status": "ยกเลิกแล้ว",
+          "sizeMB": 0.1
+        },
+        {
+          "title": "ระเบียบ ทอ. ว่าด้วยการจราจรทางบก พ.ศ.2539",
+          "url": "https://drive.google.com/file/d/1ti2c8E2l6WhWJJI3APeb_74LEalKrumk/view",
+          "year": 2539,
+          "sizeMB": 0.1
+        },
+        {
+          "title": "ระเบียบ ทอ. ว่าด้วยการขนส่ง พ.ศ.2564",
+          "url": "https://drive.google.com/file/d/1-bKI2By_3dBxfxDfJOegG9FcQWEVZsNQ/view",
+          "year": 2564,
+          "sizeMB": 86
+        }
+      ]
+    },
+    {
+      "id": "rtaf-intell-drive",
+      "enabled": true,
+      "dept": "ขว.ทอ.",
+      "name": "กรมข่าวทหารอากาศ (ขว.ทอ.) — โฟลเดอร์ Google Drive '02. กรมข่าวทหารอากาศ' ของผู้ใช้ (อ่านผ่านเครื่องมือเชื่อมต่อ Drive; เก็บเป็นลิงก์ ค้นจากชื่อ) · ฉบับที่ซ้ำกับรายการเดิมรวมเป็นรายการเดียว (same_as)",
+      "source_page": "https://drive.google.com/drive/folders/1Z9ULW_I2zDoOLJfje6kI6-necl0U5oHe",
+      "default_category": "ระเบียบ",
+      "default_tags": [],
+      "items": [
+        {
+          "title": "ระเบียบ ทอ.ว่าด้วยการใช้ถนนของผู้ขออนุญาตใช้ถนนในพื้นที่กองทัพอากาศ พ.ศ.2563",
+          "url": "https://drive.google.com/file/d/1ir1zbyDBBuR65_wouMq-DNwD3nhGszNs/view",
+          "year": 2563
+        },
+        {
+          "title": "ระเบียบ ทอ.ว่าด้วยการให้ข่าวและบริการข่าวสารทางราชการ พ.ศ.2555",
+          "url": "https://drive.google.com/file/d/1O5MdGVCT97H4zYkj8jD12fsaWWEXvP_n/view",
+          "year": 2555,
+          "same_as": "การให้ข่าวและบริการข่าวสารของทางราชการ พ.ศ.2555"
+        },
+        {
+          "title": "มาตรการรักษาความปลอดภัยข้อมูลข่าวสารลับในรูปแบบอิเล็กทรอนิกส์",
+          "url": "https://drive.google.com/file/d/12FlBYNZDHT7JWsK0_QP2DH0i3m7QCIPu/view",
+          "year": 2566,
+          "category": "มาตรการ"
+        },
+        {
+          "title": "ระเบียบ ทอ.ว่าด้วยการสอบสวนโดยวิธีการทางอิเล็กทรอนิกส์ พ.ศ.2567",
+          "url": "https://drive.google.com/file/d/1680NRDh9aeGDkEJAoc17f9PJPvmHXSMG/view",
+          "year": 2567,
+          "same_as": "การสอบสวนโดยวิธีการทางอิเล็กทรอนิกส์ พ.ศ.2567"
+        },
+        {
+          "title": "ระเบียบ ทอ.ว่าด้วย จนท.ปฏิบัติงานด้านการอารักขา VIP พ.ศ.2564",
+          "url": "https://drive.google.com/file/d/1LKjRrzckJYT3BnHfBuvOxfFkqZtpJw5j/view",
+          "year": 2564,
+          "same_as": "จนท.ปฏิบัติงานด้านการอารักขาบุคลลสำคัญ พ.ศ.2564"
+        },
+        {
+          "title": "ระเบียบ ทอ.ว่าด้วยการรักษาการณ์ พ.ศ.2560",
+          "url": "https://drive.google.com/file/d/1F15tLljoj0qvzkcf9potXhsncLSoXq1h/view",
+          "year": 2560
+        },
+        {
+          "title": "ระเบียบ ทอ.ว่าด้วยการให้บริการพื้นที่และอาคารภายในพิพิธภัณฑ์กองทัพอากาศและการบินแห่งชาติ พ.ศ.2568",
+          "url": "https://drive.google.com/file/d/1YLZHoJ08it1tWshdlh11m8KWKZaRA0vo/view",
+          "year": 2568
+        }
+      ]
+    },
+    {
+      "id": "rtaf-logist-drive",
+      "enabled": true,
+      "dept": "กบ.ทอ.",
+      "name": "กรมการส่งกำลังบำรุงทหารอากาศ (กบ.ทอ.) — โฟลเดอร์ Google Drive ของผู้ใช้ (รวมโฟลเดอร์ย่อย LMIS / คู่มือพัสดุ 22 บท; เก็บเป็นลิงก์) · ผู้ใช้ระบุไฟล์เอง จึงรวมเอกสารพัสดุด้วย",
+      "source_page": "https://drive.google.com/drive/folders/18UCUGpVBj_wCI49o20CcXvYIOxxJV8SL",
+      "default_category": "ระเบียบ",
+      "default_tags": [],
+      "items": [
+        {
+          "title": "ระเบียบ ทอ.ว่าด้วยระบบ LMIS พ.ศ.2564",
+          "url": "https://drive.google.com/file/d/17Sbj7KRgZ1vnV5SBm1jlYBnei__SN7DO/view",
+          "year": 2564,
+          "category": "ระเบียบ"
+        },
+        {
+          "title": "ระเบียบ ทอ.ว่าด้วยการจัดซื้อจัดจ้างและการบริหารพัสดุ พ.ศ.2560",
+          "url": "https://drive.google.com/file/d/1yz6d6klLNYyXI8pcQcXvSFEw2_3s0OrF/view",
+          "year": 2560,
+          "category": "ระเบียบ"
+        },
+        {
+          "title": "ระเบียบ ทอ. ว่าด้วยฐานบินทหาร พ.ศ.2534",
+          "url": "https://drive.google.com/file/d/1nQDAeUikFqauY0i6mQYDmHVATAd-J4pq/view",
+          "year": 2534,
+          "category": "ระเบียบ",
+          "same_as": "ฐานบินทหาร พ.ศ.2534"
+        },
+        {
+          "title": "คำสั่ง ทอ.(เฉพาะ) ที่ 59/52 การใช้น้ำมันเชื้อเพลิงภาคพื้นงบพิเศษ",
+          "url": "https://drive.google.com/file/d/1uhfPR3-DX9da--sOwzNHnqIoJlq5R-1j/view",
+          "year": 2552,
+          "category": "คำสั่ง"
+        },
+        {
+          "title": "กบ.ทอ. ขอแจ้งเรื่องการจัดทำผนวก ข ประกอบคำสั่ง ทอ.(เฉพาะ) ที่ 59/52 ลง 19 พ.ค.52 บัญชีแสดงการใช้น้ำมันเชื้อเพลิงภาคพื้นในงบพิเศษ",
+          "url": "https://drive.google.com/file/d/1M_k1MlRLHjxMmKfBeRmmfB_-Gg3jk0dj/view",
+          "year": 2562,
+          "category": "คำสั่ง"
+        },
+        {
+          "title": "คู่มือว่าด้วยการจัดซื้อจัดจ้างและการบริหารพัสดุของกองทัพอากาศ พ.ศ.2562 ฉบับแก้ไขเพิ่มเติม (ครั้งที่ 2)",
+          "url": "https://drive.google.com/file/d/1Cz1eZg7wq-WJe868wZuVWnGgzKMvdE3K/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คำสั่ง กบ.ทอ. แนวทางการปฏิบัติงานในระบบสารสนเทศด้านการส่งกำลังบำรุงของ ทอ.(LMIS)",
+          "url": "https://drive.google.com/file/d/1-GdV8TijO4U5dMQlqYAhXAcqIknd2ChO/view",
+          "year": 2564,
+          "category": "คำสั่ง"
+        },
+        {
+          "title": "คู่มือการใช้งานระบบสถานภาพการส่งกำลังบำรุงของ ทอ.(LI)",
+          "url": "https://drive.google.com/file/d/1WWQyxBFTdpkcnNsUMmWWZYHg59voISJu/view",
+          "year": 2564,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "ผนวก ก-ฒ ระบบต่างๆ ใน LMIS (ประกอบระเบียบ ทอ.ว่าด้วยระบบ LMIS)",
+          "url": "https://drive.google.com/file/d/1b8OKc-AaZttv9SKEQWUK4L0saFL7l9zY/view",
+          "year": 2564,
+          "category": "ระเบียบ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 1 การจัดระบบพัสดุ",
+          "url": "https://drive.google.com/file/d/1zysrDHAc4VhSt2rUJDY5jFnSpCtXzF2P/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 2 การจำแนกพัสดุทางคุณลักษณะและกำหนดความรับผิด",
+          "url": "https://drive.google.com/file/d/1S5xj-y7x7NNrSrdiuaLqbXsG3g6QqMdn/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 3 การจัดซื้อจัดจ้าง",
+          "url": "https://drive.google.com/file/d/13Mr8MqT37KwtG4gsvqT7VsgMkrevXvFl/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 4 การเบิกพัสดุ",
+          "url": "https://drive.google.com/file/d/1zAxejyAMAv7rscQWErj5aXG_gAR_aT_o/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 5 การส่งคืนพัสดุ",
+          "url": "https://drive.google.com/file/d/1gSkKC15NkxALgXJtt2uU97V0WW9SAzi0/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 6 การตรวจและการควบคุมเอกสาร",
+          "url": "https://drive.google.com/file/d/1PQrM0SN6rghFxAneSMox4wQQnVtg4UH3/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 7 การทำบัญชีคุมพัสดุ",
+          "url": "https://drive.google.com/file/d/1NleAakNBsjiS22Jy9ScH6Sa1NLK31Gwm/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 8 การสำรวจพัสดุ",
+          "url": "https://drive.google.com/file/d/1DMm1rdvqLCOkvxNaWltgKY27nxH02DIC/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 9 การตรวจพัสดุ",
+          "url": "https://drive.google.com/file/d/1nvtmULrN240XlHo3UABiDRoaqSnTtNUN/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 10 ป้ายกำกับพัสดุ",
+          "url": "https://drive.google.com/file/d/1HpI2D4uMhXtUhi34tlV1OgpXGvNquWEr/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 11 การรับพัสดุ",
+          "url": "https://drive.google.com/file/d/161hadBv-JYUH8fMHmudIpSWqeJeoDkfW/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 12 การส่งพัสดุ",
+          "url": "https://drive.google.com/file/d/1XktGdVs9EcU-sK5ynLuc0omTp3D22-Vs/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 13 การป้องกันสนิมและบรรจุหีบห่อ",
+          "url": "https://drive.google.com/file/d/17--zcPrqhzZT85ua7Nk85nGWV3gNHRAX/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 14 การจัดคลังเก็บพัสดุ",
+          "url": "https://drive.google.com/file/d/1ta7hKOV7X3X3SnzJVYxOxyPmt31H2IkN/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 15 การโอนพัสดุ",
+          "url": "https://drive.google.com/file/d/1uE4CoCV5b9YVw4upy_ugtLqyA1x80jH1/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 16 การจำหน่ายพัสดุ",
+          "url": "https://drive.google.com/file/d/1_Bbw2SwyfVZoJ7EPK6xxjnN4leZihxn_/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 17 การสอบสวนและการชดใช้ค่าทดแทนความเสียหาย",
+          "url": "https://drive.google.com/file/d/1FMgidGdqGiz0rQ6P-DtGGTw1Y1Xo0FcP/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 18 อัตราจ่ายพัสดุ",
+          "url": "https://drive.google.com/file/d/1BFRnTWlkv1P2C5fl0jqZgy2AQSNXH-Im/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 19 การจัดทำบัญชีเงินพัสดุ",
+          "url": "https://drive.google.com/file/d/1PsC0Ooy-uYamN2SIoRGJaMhadAMAanMd/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 20 การพัสดุเชื้อเพลิง",
+          "url": "https://drive.google.com/file/d/1-Kd1Lp9RD3xzLu0S_Zu2XvYdU1p3hfGq/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 21 กำหนดหมายเลขและการจัดทำสมุดรายการพัสดุ",
+          "url": "https://drive.google.com/file/d/141FcRwMrsCchh8rHY1HIXGibG2WmNO5T/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการบริหารงานพัสดุ ทอ. บทที่ 22 การกำหนดความต้องการและการแจ้งความต้องการพัสดุ",
+          "url": "https://drive.google.com/file/d/19LvTXvXO8W_ZYa_ekdIFMaZs2IeOnySj/view",
+          "year": 2562,
+          "category": "คู่มือ"
+        }
+      ]
+    }
+  ],
+  "category_keywords": {
+    "ระเบียบ": [
+      "ระเบียบ"
+    ],
+    "คำสั่ง": [
+      "คำสั่ง"
+    ],
+    "ประกาศ": [
+      "ประกาศ"
+    ],
+    "ข้อบังคับ": [
+      "ข้อบังคับ"
+    ],
+    "หลักนิยม": [
+      "หลักนิยม"
+    ],
+    "คู่มือ": [
+      "คู่มือ"
+    ],
+    "แบบฟอร์ม": [
+      "แบบฟอร์ม",
+      "Form"
+    ],
+    "แผน": [
+      "แผนปฏิบัติราชการ",
+      "แผนเพิ่มประสิทธิภาพ",
+      "แผนการ",
+      "แผนเผชิญเหตุ"
+    ],
+    "รายงาน": [
+      "รายงาน"
+    ],
+    "กฎหมาย": [
+      "พรบ.",
+      "พรก.",
+      "พ.ร.บ.",
+      "พระราชบัญญัติ",
+      "พระราชกฤษฎีกา",
+      "กฎกระทรวง"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+วิธีขึ้น GitHub (อัปโหลดทั้งโฟลเดอร์นี้ทุกอย่างลง repo ที่ราก)
+1. สร้าง repo ใหม่ -> Add file -> Upload files -> ลากไฟล์/โฟลเดอร์ทั้งหมดในโฟลเดอร์นี้ลงไป (รวม .github ซึ่งเป็นโฟลเดอร์ซ่อน
+   ถ้าลากไม่ติด ให้ Add file -> Create new file ตั้งชื่อ .github/workflows/update.yml แล้ววางเนื้อหาไฟล์นั้น)
+2. Settings -> Pages -> Deploy from branch -> main / (root)
+3. Settings -> Actions -> General -> Workflow permissions = Read and write permissions
+4. แท็บ Actions -> update-library -> Run workflow เพื่อทดสอบหนึ่งครั้ง (หลังจากนั้นรันเองทุกสัปดาห์)
+5. ก่อนตั้ง repo เป็น public: เปลี่ยนรหัส ยก.ทอ. ให้แข็งแรงกว่าเดิม และใส่อีเมลติดต่อใน crawler/sources.json (user_agent)

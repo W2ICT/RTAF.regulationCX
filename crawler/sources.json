@@ -1149,6 +1149,499 @@
           "category": "คู่มือ"
         }
       ]
+    },
+    {
+      "id": "rtaf-ict-drive",
+      "enabled": true,
+      "dept": "ทสส.ทอ.",
+      "name": "กรมเทคโนโลยีสารสนเทศและการสื่อสารทหารอากาศ (ทสส.ทอ.) — โฟลเดอร์ Google Drive ของผู้ใช้ (8 หมวดย่อย; เก็บเป็นลิงก์) · ผู้ใช้ให้เอาทั้งหมด จึงไม่กรองขอบเขต · ฉบับที่ซ้ำกับหน่วยอื่นรวมเป็นรายการเดียว (same_as)",
+      "source_page": "https://drive.google.com/drive/folders/1v-Hk-7Mi6dj-bhjX1v5_59drANnABXoC",
+      "default_category": "อื่นๆ",
+      "default_tags": [],
+      "items": [
+        {
+          "title": "ข่ายวิทยุ และรหัส - นามเรียกขาน กองทัพอากาศ พ.ศ.2561",
+          "url": "https://drive.google.com/file/d/1JqhC0COElzDQqQUimwEdSetXmtqa4MGm/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2561
+        },
+        {
+          "title": "แผนการรับมือภัยคุกคามทางไซเบอร์ ทอ. (พ.ศ.2569)",
+          "url": "https://drive.google.com/file/d/1KA42Ms3LoNhalJdr6kzItRfSJWppDuUE/view",
+          "category": "แผน",
+          "year": 2569
+        },
+        {
+          "title": "แผนการรับมือภัยคุกคามทางไซเบอร์ ทอ. (พ.ศ.2567)",
+          "url": "https://drive.google.com/file/d/1VKkhMuASjUDO9fEdQlSkdpbvwpnN7z1L/view",
+          "category": "แผน",
+          "year": 2567
+        },
+        {
+          "title": "แผนแม่บท ICT ทอ. ปี 63-70 (ฉบับแก้ไขปี 67)",
+          "url": "https://drive.google.com/file/d/1F9Re6IZtKTlWkwhTW_yg09J7mgOYYN3n/view",
+          "category": "แผน",
+          "year": 2567
+        },
+        {
+          "title": "แนวความคิดการปฏิบัติภารกิจสงครามอิเล็กทรอนิกส์ (EW CONOPs) พ.ศ.2563",
+          "url": "https://drive.google.com/file/d/1TZjsI_qac-9B3EPxiwc_5pdIJqzxBfSg/view",
+          "category": "หลักนิยม",
+          "year": 2563
+        },
+        {
+          "title": "แผนปฏิบัติราชการ ปี 68 (ทสส.ทอ.)",
+          "url": "https://drive.google.com/file/d/1q7LmgMtFOocIc-nwqbBTdBHkL292yEGo/view",
+          "category": "แผน",
+          "year": 2568
+        },
+        {
+          "title": "ยุทธศาสตร์กองทัพอากาศ 20 ปี (พ.ศ.2561-2580) (ฉบับเดิม พ.ศ.2561)",
+          "url": "https://drive.google.com/file/d/1eUVHwqZZIaEHZspMz0Sw2_lx_fZYjPal/view",
+          "category": "แผน",
+          "year": 2561
+        },
+        {
+          "title": "แผนพัฒนารัฐบาลดิจิทัล (ราชกิจจานุเบกษา)",
+          "url": "https://drive.google.com/file/d/17X3E2Lc5KENqvShYNhYqc-z-Szcg2d8h/view",
+          "category": "แผน",
+          "year": 2566
+        },
+        {
+          "title": "แผนพัฒนาดิจิทัลเพื่อเศรษฐกิจและสังคม",
+          "url": "https://drive.google.com/file/d/1hoQPGdBiuFqrDIf_20x73Fo-fLcFFTv0/view",
+          "category": "แผน",
+          "year": 2559
+        },
+        {
+          "title": "แผนปฏิบัติการว่าด้วยการส่งเสริมการใช้ประโยชน์เทคโนโลยี 5G ของประเทศไทย ระยะที่ 2",
+          "url": "https://drive.google.com/file/d/14i5ZryJmbnS5QPa3NdiSGBoDlCndPsRG/view",
+          "category": "แผน",
+          "year": 2567
+        },
+        {
+          "title": "แผนปฏิบัติการว่าด้วยการส่งเสริมการใช้ประโยชน์เทคโนโลยี 5G ของประเทศไทย ระยะที่ 1",
+          "url": "https://drive.google.com/file/d/1uTW31J85eHnZvJLhIX6FNDGedf18qVHs/view",
+          "category": "แผน",
+          "year": 2565
+        },
+        {
+          "title": "แผนบริหารจัดการความเสี่ยงด้านเทคโนโลยีสารสนเทศและการสื่อสารทหารอากาศ ทสส.",
+          "url": "https://drive.google.com/file/d/1l2QlF3FEBuHcizu_FX9Sf3DXL-hyN6vV/view",
+          "category": "แผน",
+          "year": 2564
+        },
+        {
+          "title": "นโยบายไม่รับของขวัญ และของกำนัลทุกชนิดจากการปฏิบัติหน้าที่ (No Gift Policy) พ.ศ.2565",
+          "url": "https://drive.google.com/file/d/1WSgyyxYAbAU8txNTlFcyiDk3SZ4okeWA/view",
+          "category": "นโยบาย",
+          "year": 2565
+        },
+        {
+          "title": "ทะเบียนความเสี่ยง สายวิทยาการด้านสารสนเทศและสงครามอิเล็กทรอนิกส์ ต.ค.66 - ก.ย.67",
+          "url": "https://drive.google.com/file/d/16Qyn_-pBYYhuQDb98PH5mZo3eRz4uUcQ/view",
+          "category": "แผน",
+          "year": 2566
+        },
+        {
+          "title": "แผนพัฒนาทักษะด้านดิจิทัลบุคลากรของ กห. (เต็ม) พ.ศ.2563-2570",
+          "url": "https://drive.google.com/file/d/1JwntTdwrRuAaa2MXa3VGGVi8K_W-U1Iw/view",
+          "category": "แผน",
+          "year": 2563
+        },
+        {
+          "title": "นโยบาย No Gift Policy ทอ. พ.ศ.2566",
+          "url": "https://drive.google.com/file/d/1jgH8d0bZFE29RNbRi_Oh_5dXSOUfs8tE/view",
+          "category": "นโยบาย",
+          "year": 2566
+        },
+        {
+          "title": "ระเบียบ ว่าด้วยการรักษาความปลอดภัยแห่งชาติเกี่ยวกับการสื่อสาร พ.ศ.2525",
+          "url": "https://drive.google.com/file/d/1ds8-g83x6_iVifkS-EvqtGKrAWfLpOxN/view",
+          "category": "ระเบียบ",
+          "year": 2525
+        },
+        {
+          "title": "ระเบียบ ว่าด้วยการรักษาความลับของทางราชการ พ.ศ.2544",
+          "url": "https://drive.google.com/file/d/1G5jnDLJIA5cSnMThTOLqzUyLw5IR5YMd/view",
+          "category": "ระเบียบ",
+          "year": 2544
+        },
+        {
+          "title": "ระเบียบ ว่าด้วยการรักษาความลับของทางราชการ (ฉบับที่ 2) พ.ศ.2561",
+          "url": "https://drive.google.com/file/d/1qWOL0fmsUKz9GQxXgPXXpY2idHD-e2sq/view",
+          "category": "ระเบียบ",
+          "year": 2561
+        },
+        {
+          "title": "พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ.2562",
+          "url": "https://drive.google.com/file/d/1NvuNgrFZ2OSh9KGPmhkZB43beNFSWfhR/view",
+          "category": "กฎหมาย",
+          "year": 2562,
+          "same_as": "พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562"
+        },
+        {
+          "title": "พระราชบัญญัติการรักษาความมั่นคงปลอดภัยไซเบอร์ พ.ศ.2562",
+          "url": "https://drive.google.com/file/d/1mhyLRyyiKO34ksBmiI2SQJ4ySOonmHFH/view",
+          "category": "กฎหมาย",
+          "year": 2562,
+          "same_as": "พระราชบัญญัติการรักษาความมั่นคงปลอดภัยไซเบอร์ พ.ศ. 2562"
+        },
+        {
+          "title": "พ.ร.บ. ว่าด้วยการกระทำความผิดเกี่ยวกับคอมพิวเตอร์ ฉบับที่ 1",
+          "url": "https://drive.google.com/file/d/1eSaif8fFTCiDaHTTvFFS6-Z4iyKto7yB/view",
+          "category": "กฎหมาย"
+        },
+        {
+          "title": "พ.ร.บ. ว่าด้วยการกระทำความผิดเกี่ยวกับคอมพิวเตอร์ ฉบับที่ 2",
+          "url": "https://drive.google.com/file/d/16IoIc2uuMOmU3kvNkqgvU4Yfki5nHDLv/view",
+          "category": "กฎหมาย",
+          "year": 2560,
+          "same_as": "พรบ.ว่าด้วยการกระทำความผิดเกี่ยวกับคอมพิวเตอร์ พ.ศ.2560"
+        },
+        {
+          "title": "พ.ร.ก. มาตรการป้องกันและปราบปรามอาชญากรรมทางเทคโนโลยี ฉบับที่ 1",
+          "url": "https://drive.google.com/file/d/12NmVDy1VYcTug4Ayb6X4F9OPonNsCH_e/view",
+          "category": "กฎหมาย"
+        },
+        {
+          "title": "พ.ร.ก. มาตรการป้องกันและปราบปรามอาชญากรรมทางเทคโนโลยี ฉบับที่ 2",
+          "url": "https://drive.google.com/file/d/1Qtb6pWnGfYsdXLWrXUTNdrdOh8YKyN96/view",
+          "category": "กฎหมาย"
+        },
+        {
+          "title": "พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล (PDPA)",
+          "url": "https://drive.google.com/file/d/1_UMEWRfJvyVM-Z-s_TU-TsP3OmcF1gnU/view",
+          "category": "กฎหมาย",
+          "year": 2562,
+          "same_as": "พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562"
+        },
+        {
+          "title": "พ.ร.บ. การรักษาความมั่นคงปลอดภัยไซเบอร์ (Cybersecurity Act)",
+          "url": "https://drive.google.com/file/d/1FeTpn9mFwlMGB-QWOWIv0PrYbZXtdiFV/view",
+          "category": "กฎหมาย",
+          "year": 2562,
+          "same_as": "พระราชบัญญัติการรักษาความมั่นคงปลอดภัยไซเบอร์ พ.ศ. 2562"
+        },
+        {
+          "title": "ระเบียบ ทอ.ว่าด้วยการรักษาความปลอดภัยระบบสารสนเทศของ ทอ. พ.ศ.2552",
+          "url": "https://drive.google.com/file/d/1cC1sD5XVY6iXqKTe6Gv393mbcOzv0V_M/view",
+          "category": "ระเบียบ",
+          "year": 2552
+        },
+        {
+          "title": "ระเบียบ ทอ.ว่าด้วยการรักษาความปลอดภัย พ.ศ.2565",
+          "url": "https://drive.google.com/file/d/15prFmK7rZT2QLoF7E-EBw1AgBCLaCNQY/view",
+          "category": "ระเบียบ",
+          "year": 2565,
+          "same_as": "ระเบียบ ทอ.ว่าด้วยการรักษาความปลอดภัย พ.ศ.2565"
+        },
+        {
+          "title": "ระเบียบ ทอ. ว่าด้วยการตรวจสอบผู้ทำการบนอากาศยานเป็นประจำ จำพวกทหารสารสนเทศและสงครามอิเล็กทรอนิกส์ พ.ศ.2563",
+          "url": "https://drive.google.com/file/d/1nhEv5Iyl77IX7LHUbYEnApX_PGjOMiXs/view",
+          "category": "ระเบียบ",
+          "year": 2563,
+          "same_as": "จำพวกทหารสารสนเทศและสงครามอิเล็กทรอนิกส์ พ.ศ.2563"
+        },
+        {
+          "title": "ระเบียบ ทอ.ว่าด้วยการรักษาความปลอดภัยระบบสารสนเทศ พ.ศ.2563",
+          "url": "https://drive.google.com/file/d/1yAD84UbM7W2vGyw9HbuLBwrvcdxM6XpT/view",
+          "category": "ระเบียบ",
+          "year": 2563
+        },
+        {
+          "title": "ระเบียบ ทอ.ว่าด้วยการคุ้มครองข้อมูลส่วนบุคคล พ.ศ.2563",
+          "url": "https://drive.google.com/file/d/1ElR0zgUoXd0qFz4IL3Kyr5I6sNPbcBSC/view",
+          "category": "ระเบียบ",
+          "year": 2563,
+          "same_as": "ระเบียบ ทอ.ว่าด้วยการคุ้มครองข้อมูลส่วนบุคคล พ.ศ.2563"
+        },
+        {
+          "title": "มาตรฐานและแนวทางปฏิบัติการออกแบบโครงสร้างพื้นฐานทางด้านสารสนเทศเพื่อการประมวลผลข้อมูลภาครัฐ",
+          "url": "https://drive.google.com/file/d/18Tk4G-S5xStCVCEKCP0sa_swzbWYb1gy/view",
+          "category": "มาตรฐาน",
+          "year": 2561
+        },
+        {
+          "title": "มาตรฐานงานกรมเทคโนโลยีสารสนเทศและการสื่อสารทหารอากาศ พ.ศ.2564",
+          "url": "https://drive.google.com/file/d/1H86SOkx3HdM3HUSSWfsx0weARi1ISdEm/view",
+          "category": "มาตรฐาน",
+          "year": 2564
+        },
+        {
+          "title": "มาตรฐานเว็บไซต์ภาครัฐ เวอร์ชัน 3",
+          "url": "https://drive.google.com/file/d/11WepIlkH0ytF-7HmF6C6clMnSvqJxQRO/view",
+          "category": "มาตรฐาน",
+          "year": 2566
+        },
+        {
+          "title": "คู่มือการใช้งาน การตรวจสอบความเร็วเครือข่าย ทอ.",
+          "url": "https://drive.google.com/file/d/1EbUdfsiWS7ma4cc3BG04jfEmWiPF8zeo/view",
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการใช้งาน โปรแกรมบูรณาการข้อมูลสำหรับ ศปก.กองบิน",
+          "url": "https://drive.google.com/file/d/1byBIDZ9eIroSm__yg91kEP4z5GpdKrjn/view",
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือ การเรียนออนไลน์ TDGA Learning",
+          "url": "https://drive.google.com/file/d/1-ozAJV_bvoZHSr5e-4e1nbpvqgShijun/view",
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการใช้งาน เครื่องมือสำรวจฯ Self-Assessment",
+          "url": "https://drive.google.com/file/d/1dXb6lIHLfmR9_VRqps1oaORDHMeES6WL/view",
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการใช้งาน ระบบแสดงความสามารถทางด้านเทคโนโลยีสารสนเทศและสงครามอิเล็กทรอนิกส์ RTAF ICT CERTIFICATE SYSTEM",
+          "url": "https://drive.google.com/file/d/1NDGa6mb3gM0uC3oa6LFglQyvd5fSk7DJ/view",
+          "category": "คู่มือ"
+        },
+        {
+          "title": "คู่มือการใช้งาน ระบบการทดสอบแบบ E-Testing (Dict recruit)",
+          "url": "https://drive.google.com/file/d/1rPBDjRrznJ_dcRlT_R8tZDJH7w7RSQKq/view",
+          "category": "คู่มือ"
+        },
+        {
+          "title": "ระบบจัดการความรู้ ทอ. คู่มือการจัดการชุมชนนักปฏิบัติ (CoP)",
+          "url": "https://drive.google.com/file/d/1tm2zBWgsaiZyHc2i7FS5Ry2fZLn2JuPg/view",
+          "category": "คู่มือ"
+        },
+        {
+          "title": "ระบบจัดการความรู้ ทอ. คู่มือการใช้งานสำหรับ Admin",
+          "url": "https://drive.google.com/file/d/1HwLilSfTJVr9nzBrBD_noV7vyzP96FR5/view",
+          "category": "คู่มือ"
+        },
+        {
+          "title": "ระบบจัดการความรู้ ทอ. คู่มือการใช้งานหน้า Portal",
+          "url": "https://drive.google.com/file/d/1jJHSwcbjpHJXfSD22ZPwRMY807E7t_PH/view",
+          "category": "คู่มือ"
+        },
+        {
+          "title": "ระบบจัดการความรู้ ทอ. คู่มือการใช้งานระบบสื่อสังคมออนไลน์",
+          "url": "https://drive.google.com/file/d/1VEElVq-B7QHU-l3e3LOIVT36Amwm1ul7/view",
+          "category": "คู่มือ"
+        },
+        {
+          "title": "แนวทางการปฏิบัติเพื่อรองรับประกาศกระทรวงดิจิทัลเพื่อเศรษฐกิจและสังคม ให้สอดคล้องกับมาตรฐานการรักษาความมั่นคงปลอดภัยของข้อมูลส่วน",
+          "url": "https://drive.google.com/file/d/110FrXGx-pJWKOS_6hJiFrIyMG3Wa-eXC/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2565
+        },
+        {
+          "title": "แนวทางการใช้ Generative AI",
+          "url": "https://drive.google.com/file/d/1KinnwlIJN1jgoDzVp0Ohqg0q3NbzuLoz/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2568
+        },
+        {
+          "title": "แนวทางการตรวจสอบ เฝ้าระวังเว็บไซต์หน่วยงานถูกแทรกแซง",
+          "url": "https://drive.google.com/file/d/1zT5UxwVpms8UdLe2EeeGmhxc8y0AAugr/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2568
+        },
+        {
+          "title": "คำแนะนำการประเมินราคาและระยะเวลาในการพัฒนาซอฟต์แวร์กองทัพอากาศ",
+          "url": "https://drive.google.com/file/d/19kzrwrWdN3ooM_YOwU9sy68NOr6nY4Mb/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2567
+        },
+        {
+          "title": "แนวทางการปฏิบัติด้านความมั่นคงปลอดภัยทางไซเบอร์ต่อโครงสร้างพื้นฐานสำคัญทางสารสนเทศของกองทัพอากาศ",
+          "url": "https://drive.google.com/file/d/1RyiIFv3AYOjzyr8GZJhJ3otSBKUTurPt/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2563
+        },
+        {
+          "title": "แนวทางการปฏิบัติเกี่ยวกับการบันทึกภาพในพื้นที่ ทอ.",
+          "url": "https://drive.google.com/file/d/1UYMWiZJUPQxUbYlnspulaa3rXZBwOS3d/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2562
+        },
+        {
+          "title": "แนวปฏิบัติใช้งานบัญชีผู้ใช้กองทัพอากาศ (พ.ศ.2563)",
+          "url": "https://drive.google.com/file/d/18-CQTMgyhPhnNnM5BDD6WRc38dAdGF3R/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2563
+        },
+        {
+          "title": "นโยบายและแนวปฏิบัติในการรักษาความมั่นคงปลอดภัยด้านสารสนเทศของกองทัพอากาศ พ.ศ.2556",
+          "url": "https://drive.google.com/file/d/1KggoI2dtvJabciH2QQFJHrKOgwMEiiMJ/view",
+          "category": "นโยบาย",
+          "year": 2556
+        },
+        {
+          "title": "แนวทางพัฒนาระบบเครือข่ายสารสนเทศของ ทอ.",
+          "url": "https://drive.google.com/file/d/1Z-J_oBxjuIn8l4VskMqkb9A3ganRzC-r/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2564
+        },
+        {
+          "title": "แนวทางการรับ-ส่งเอกสารที่มีชั้นความลับผ่านระบบอิเล็กทรอนิกส์",
+          "url": "https://drive.google.com/file/d/1_OPZMU9Ds-wt3UB8MI1nTw1U8fyCiOG7/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2564
+        },
+        {
+          "title": "แนวทางการติดตั้งใช้งานซอฟต์แวร์พื้นฐานสำหรับเครื่องคอมพิวเตอร์สำนักงานภายใน ทอ. (ไฟล์ที่ 1)",
+          "url": "https://drive.google.com/file/d/1kFdwbpHrYM2tIx9R0Q60TgL5rWMgJ1e7/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2563
+        },
+        {
+          "title": "แนวทางการติดตั้งใช้งานซอฟต์แวร์พื้นฐานสำหรับเครื่องคอมพิวเตอร์สำนักงานภายใน ทอ. (ไฟล์ที่ 2)",
+          "url": "https://drive.google.com/file/d/1O8hCoW-wBHrTWpYMRQ7ISy0Uw9N_2j_-/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2563
+        },
+        {
+          "title": "การเพิ่มความปลอดภัยเว็บไซต์และระบบสารสนเทศของ ทอ.ด้วยโปรโตคอล HTTPS",
+          "url": "https://drive.google.com/file/d/162WTu2RYomIvV1jSJBcscR5pTqB3_eim/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2563,
+          "same_as": "การเพิ่มความปลอดภัยเว็บไซต์และระบบสารสนเทศของ ทอ.ด้วยโปรโตคอล HTTPS"
+        },
+        {
+          "title": "แนวทางการใช้งานระบบอินเทอร์เน็ตของ ทอ.",
+          "url": "https://drive.google.com/file/d/1dVKRUp10LjLibN5ykijMrvQ9untOWRhC/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2562
+        },
+        {
+          "title": "แนวทางการใช้งานบัญชีผู้ใช้ของ ทอ.(RTAF User Account)",
+          "url": "https://drive.google.com/file/d/1gmkmW_-fcEpD-qrmoSHSg_SrgY8rEAzd/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2562
+        },
+        {
+          "title": "กำหนดแนวทางการจัดทำเว็บไซต์ของ นขต.ทอ.",
+          "url": "https://drive.google.com/file/d/1mJSdRvRs-8Cq8V--zRjuCE9x3H44CVuD/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2560
+        },
+        {
+          "title": "แนวทางปฏิบัติในการใช้สื่อสังคมออนไลน์ของ ทอ.",
+          "url": "https://drive.google.com/file/d/19ck1AaWTLfydV1K7xIVO5aBzGW8rNNts/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2557
+        },
+        {
+          "title": "แนวทางการแสดงความคิดเห็นในสื่อสังคมออนไลน์ที่อาจมีผลกระทบต่อภาพลักษณ์ของ ทอ.",
+          "url": "https://drive.google.com/file/d/1u3oeCNnZNRmf95na6lHLZ6Ph04ItDOqh/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2557
+        },
+        {
+          "title": "แนวทางการขับเคลื่อนข้อมูลขนาดใหญ่ กองทัพอากาศ",
+          "url": "https://drive.google.com/file/d/1OG2z8-xk5X9lu9EQZZx6NwDBITvnwS_L/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2563
+        },
+        {
+          "title": "แนวทางการพัฒนาขีดความสามารถการปฏิบัติการคลื่นแม่เหล็กไฟฟ้า ทอ. (EMSO)",
+          "url": "https://drive.google.com/file/d/1Do96Iqv4paFib-zkBEDQme9StuAyNskS/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2567
+        },
+        {
+          "title": "แนวทางการพัฒนาทักษะดิจิทัลพื้นฐานให้กับกำลังพล ทอ.",
+          "url": "https://drive.google.com/file/d/1FsijU_7-ImkAN32rn3dUSO0FFsPOtSZW/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2567
+        },
+        {
+          "title": "แนวทางปฏิบัติธรรมาภิบาลข้อมูล ทอ.",
+          "url": "https://drive.google.com/file/d/1hHejB7ROQ9amhP6Gq0V5C4N74VWCEQkg/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2563,
+          "same_as": "แนวทางปฏิบัติธรรมาภิบาลข้อมูล กองทัพอากาศ"
+        },
+        {
+          "title": "การกำกับดูแลข้อมูล (Data Governance Framework)",
+          "url": "https://drive.google.com/file/d/1l1kBWnJP4UdRS6aprcqYreCKRstEgH3_/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2561
+        },
+        {
+          "title": "ทักษะด้านดิจิทัลที่จำเป็นสำหรับข้าราชการและบุคลากรของรัฐเพื่อปรับเปลี่ยนเป็นรัฐบาลดิจิทัล",
+          "url": "https://drive.google.com/file/d/11uFz2-TIO_lvd_cupH2hpfwDv_HgBQAN/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2562
+        },
+        {
+          "title": "แนวทางการพัฒนาทักษะด้านดิจิทัลของข้าราชการและบุคลากรภาครัฐ",
+          "url": "https://drive.google.com/file/d/1e_TaWC-fJiWnIRIbjgyMZIdoYicsfkSM/view",
+          "category": "แนวทางปฏิบัติ",
+          "year": 2560
+        },
+        {
+          "title": "วิชาความรู้พื้นฐานสำหรับปฏิบัติการทางไซเบอร์",
+          "url": "https://drive.google.com/file/d/1QI0Q6IBJUXqZW2p1Lx6l86r8IKA9U3ZI/view",
+          "category": "ตำรา",
+          "same_as": "วิชาความรู้พื้นฐานสำหรับปฏิบัติการทางไซเบอร์"
+        },
+        {
+          "title": "วิชาป้องกันทางไซเบอร์",
+          "url": "https://drive.google.com/file/d/19eJtLvs38_7rIYIURyX5dSZjUKRaq065/view",
+          "category": "ตำรา",
+          "same_as": "วิชาป้องกันทางไซเบอร์"
+        },
+        {
+          "title": "วิชาการพิสูจน์หลักฐานทางดิจิทัล",
+          "url": "https://drive.google.com/file/d/1sJ5-jlbxxg3LhAkqVx-8lnY-hXVimL5m/view",
+          "category": "ตำรา",
+          "same_as": "วิชาการพิสูจน์หลักฐานทางดิจิทัล"
+        },
+        {
+          "title": "วิชาป้องปรามทางไซเบอร์",
+          "url": "https://drive.google.com/file/d/1gcmHP9zd268fRgB7fwDm2yRjK3xltMup/view",
+          "category": "ตำรา",
+          "same_as": "วิชาป้องปรามทางไซเบอร์"
+        },
+        {
+          "title": "วิชาข่าวกรองทางไซเบอร์",
+          "url": "https://drive.google.com/file/d/1odjJyB74g58XV74f6mM2GA2KBLaARoyV/view",
+          "category": "ตำรา",
+          "same_as": "วิชาข่าวกรองทางไซเบอร์"
+        },
+        {
+          "title": "ภาษาอังกฤษสำหรับสายวิทยาการ ทสส.ฯ (สาย 27 IT_EW)",
+          "url": "https://drive.google.com/file/d/1L5h07uGDeMxUItth7Uo4M0rqdh2eqlQe/view",
+          "category": "ตำรา"
+        },
+        {
+          "title": "ตำราฝึกงานในหน้าที่ กองนโยบายและแผน",
+          "url": "https://drive.google.com/file/d/1l1bFIa7g35zllgJNy0_o9MvyAYt-dN4j/view",
+          "category": "ตำรา"
+        },
+        {
+          "title": "ตำราฝึกงานในหน้าที่ กองเทคโนโลยีสารสนเท",
+          "url": "https://drive.google.com/file/d/1YlGH8apHKzvmSjj3qPpXo0W9bbr-zziB/view",
+          "category": "ตำรา"
+        },
+        {
+          "title": "ตำราฝึกงานในหน้าที่ กองสื่อสารอิเล็กทรอ",
+          "url": "https://drive.google.com/file/d/1pcc3jNqt-uBEoDoc3bpZX--bAgFoY-my/view",
+          "category": "ตำรา"
+        },
+        {
+          "title": "ตำราฝึกงานในหน้าที่ กองระบบบัญชาการและค",
+          "url": "https://drive.google.com/file/d/1sFYmU2cii_amWfhFn0qVMubGW-ms_gq1/view",
+          "category": "ตำรา"
+        },
+        {
+          "title": "ตำราฝึกงานในหน้าที่ กองสงครามอิเล็กทรอน",
+          "url": "https://drive.google.com/file/d/1FcrtX76u3nQUNAk-l67uxFmmNGgGiRQa/view",
+          "category": "ตำรา"
+        },
+        {
+          "title": "ตำราฝึกงานในหน้าที่ กองสงครามไซเบอร์",
+          "url": "https://drive.google.com/file/d/1T7SwBgHilJ82TL3RKct0ASyDedOHHPkx/view",
+          "category": "ตำรา"
+        }
+      ]
     }
   ],
   "category_keywords": {
